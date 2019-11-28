@@ -2,6 +2,7 @@ const Network = require('ataraxia');
 const LocalTransport = require('ataraxia-local');
 const TCPTransport = require('ataraxia-tcp');
 const Core = require("./core");
+const os = require("os");
 
 class Classroom {
 	/**
@@ -18,13 +19,9 @@ class Classroom {
 		});
 		this.net.addTransport(this.local);
 		this.net.start().then(() => {
-			core = new Core(this.net, os.hostname());
+			this.core = new Core(this.net, os.hostname());
 		}).catch(console.error);
 	}
 }
 
 module.exports = Classroom;
-
-
-
-
