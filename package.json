@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "ataraxia": "^0.7.2",
+    "ataraxia-local": "^0.7.2",
+    "ataraxia-tcp": "^0.7.2",
+    "lowdb": "^1.0.0"
+  },
+  "name": "@lit79/classroom.core",
+  "version": "0.0.1",
+  "description": "Classroom Manager Core.",
+  "main": "index.js",
+  "repository": "git@github.com:lit79repo/classroom.core.git",
+  "author": "Misha Marinenko <0x77dev@protonmail.com>",
+  "license": "GPL-3.0",
+  "private": false
+}
