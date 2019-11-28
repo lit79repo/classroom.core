@@ -18,7 +18,7 @@ class Classroom {
 		});
 		this.net.addTransport(this.local);
 		this.net.start().then(() => {
-			core = new Core(net, os.hostname());
+			core = new Core(this.net, os.hostname());
 		}).catch(console.error);
 	}
 }
