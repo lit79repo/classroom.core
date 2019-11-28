@@ -16,7 +16,7 @@ class Classroom {
 		this.local.on('leader', () => {
 			this.net.addTransport(new TCPTransport());
 		});
-		this.net.addTransport(local);
+		this.net.addTransport(this.local);
 		this.net.start().then(() => {
 			core = new Core(net, os.hostname());
 		}).catch(console.error);
