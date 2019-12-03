@@ -17,6 +17,16 @@ ataraxia-local@^0.7.2:
     end-of-stream "^1.4.1"
     local-machine-network "^0.2.0"
 
+ataraxia-services@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/ataraxia-services/-/ataraxia-services-0.7.3.tgz#20fb94c10b2e4375a3483d45c6100e1bbfb7af3e"
+  integrity sha512-xQUgsANWZVaEpntNztXiT+CI3JvWq/qAPbcDVu9o3Yxp5P0SWw/Sd6lC3XD5SgaFXZ/H05DyGyqg95jPVVqcIQ==
+  dependencies:
+    ataraxia "^0.7.2"
+    debug "^4.1.0"
+    deep-equal "^1.0.1"
+    eventemitter2 "^5.0.1"
+
 ataraxia-tcp@^0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ataraxia-tcp/-/ataraxia-tcp-0.7.2.tgz#48c7a3ceaedd615ce0be9808b98519cdbc271d4e"
@@ -103,6 +113,11 @@ event-lite@^0.1.1:
   resolved "https://registry.yarnpkg.com/event-lite/-/event-lite-0.1.2.tgz#838a3e0fdddef8cc90f128006c8e55a4e4e4c11b"
   integrity sha512-HnSYx1BsJ87/p6swwzv+2v6B4X+uxUteoDfRxsAb1S1BePzQqOLevVmkdA15GHJVd9A9Ok6wygUR18Hu0YeV9g==
 
+eventemitter2@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/eventemitter2/-/eventemitter2-5.0.1.tgz#6197a095d5fb6b57e8942f6fd7eaad63a09c9452"
+  integrity sha1-YZegldX7a1folC9v1+qtY6CclFI=
+
 eventemitter3@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-2.0.3.tgz#b5e1079b59fb5e1ba2771c0a993be060a58c99ba"
@@ -166,6 +181,11 @@ isarray@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+
+local-ip@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/local-ip/-/local-ip-2.0.0.tgz#28fb7105df418506312462808daa6c8f8f2578dc"
+  integrity sha1-KPtxBd9BhQYxJGKAjapsj48leNw=
 
 local-machine-network@^0.2.0:
   version "0.2.1"

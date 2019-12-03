@@ -27,17 +27,7 @@ class Core {
 		}
 	}
 
-	myInfo() {
-		return {
-			hostname: os.hostname(),
-			networkInterfaces: os.networkInterfaces(),
-			platform: os.platform(),
-			release: os.release(),
-			arch: os.arch(),
-			uptime: os.uptime(),
-			userInfo: os.userInfo()
-		}
-	}
+	
 	/**
 	 * 
 	 * @param {*} node Node to send info to.

@@ -2,7 +2,9 @@
   "dependencies": {
     "ataraxia": "^0.7.2",
     "ataraxia-local": "^0.7.2",
+    "ataraxia-services": "^0.7.3",
     "ataraxia-tcp": "^0.7.2",
+    "local-ip": "^2.0.0",
     "lowdb": "^1.0.0"
   },
   "name": "@lit79/classroom.core",
