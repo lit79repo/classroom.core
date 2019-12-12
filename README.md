@@ -1,6 +1,7 @@
 # Classroom Management Software
 ## Core Part of Software.
 > Copyright (C) 2019 Misha Marinenko
+
 > @lit79/classroom.core Copyright (C) 2019  Misha Marinenko 
 
 > [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
