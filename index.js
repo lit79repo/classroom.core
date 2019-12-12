@@ -14,6 +14,7 @@ const LocalTransport = require('ataraxia-local');
 const TCPTransport = require('ataraxia-tcp');
 const Core = require("./core");
 const os = require("os");
+const { version } = require("./package");
 
 const Sentry = require('@sentry/node');
 Sentry.init({ dsn: 'https://58008239544b463a9288b094cc846707@sentry.io/1843654', debug: (process.env.DEBUG ? true : false), release: version });

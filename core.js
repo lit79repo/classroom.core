@@ -1,6 +1,7 @@
 const Network = require('ataraxia');
 const os = require("os");
 const ip = require("ip");
+const { version } = require("./package");
 
 class Core {
 	/**
@@ -11,6 +12,7 @@ class Core {
 		this.net = net;
 		this.ip = ip.address();
 		this.machines = [];
+		this.version = version;
 		net.on('node:available', (node) => {
 			this.sendData(node, 'myInfo', this.myInfo());
 		})
