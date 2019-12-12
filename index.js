@@ -18,13 +18,7 @@ const { version } = require("./package");
 
 const Sentry = require('@sentry/node');
 Sentry.init({ dsn: 'https://58008239544b463a9288b094cc846707@sentry.io/1843654', debug: (process.env.DEBUG ? true : false), release: version });
-Sentry.configureScope((scope) => {
-	scope.setUser({
-		"username": os.userInfo().username
-	});
-	scope.setExtra("net_name", (name ? name : "all"));
-	scope.setExtra("hostname", os.hostname());
-});
+
 
 class Classroom {
 	/**
@@ -43,6 +37,13 @@ class Classroom {
 		this.net.start().then(() => {
 			this.core = new Core(this.net, os.hostname());
 		}).catch(console.error);
+		Sentry.configureScope((scope) => {
+			scope.setUser({
+				"username": os.userInfo().username
+			});
+			scope.setExtra("net_name", (name ? name : "all"));
+			scope.setExtra("hostname", os.hostname());
+		});
 	}
 }
 
