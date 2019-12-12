@@ -1,5 +1,6 @@
 const Network = require('ataraxia');
 const os = require("os");
+const ip = require("ip");
 
 class Core {
 	/**
@@ -8,6 +9,7 @@ class Core {
 	 */
 	constructor(net) {
 		this.net = net;
+		this.ip = ip.address();
 		this.machines = [];
 		net.on('node:available', (node) => {
 			this.sendData(node, 'myInfo', this.myInfo());
@@ -27,7 +29,16 @@ class Core {
 		}
 	}
 
-	
+	myInfo() {
+		return {
+			name: this.name,
+			hostname: this.hostname,
+			ip: this.ip,
+			version: this.version,
+			networkInterfaces: os.networkInterfaces()
+		}
+	}
+
 	/**
 	 * 
 	 * @param {*} node Node to send info to.
