@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@sentry/node": "5.9.0",
+    "ataraxia": "^0.7.2",
+    "ataraxia-local": "^0.7.2",
+    "ataraxia-tcp": "^0.7.2",
+    "ip": "^1.1.5"
+  },
+  "name": "@lit79/classroom.core",
+  "version": "0.3.0",
+  "description": "Core Part of Software. (Classroom Management Software).",
+  "main": "index.js",
+  "repository": "git@github.com:lit79repo/classroom.core.git",
+  "author": "Misha Marinenko <0x77dev@protonmail.com>",
+  "license": "GPL-3.0",
+  "private": false
+}
