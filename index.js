@@ -41,7 +41,7 @@ class Classroom {
 			scope.setUser({
 				"username": os.userInfo().username
 			});
-			scope.setExtra("net_name", (name ? name : "all"));
+			scope.setExtra("net_name", (classroom ? classroom : "all"));
 			scope.setExtra("hostname", os.hostname());
 		});
 	}
